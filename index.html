@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAG Personnalisation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body class="home">
+
+    <div class="container">
+        <h1 id="typing-text"></h1>
+        
+        <div class="buttons">
+            <a href="bad.html"><button class="btn"> Méchants légendaires</button></a>
+            <a href="genie.html"><button class="btn">Génies fictifs & réels</button></a>
+            <a href="Autre.html"><button class="btn">Autre</button></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Créé avec passion par AKAG</p>
+    </div>
+
+    <script>
+        var options = {
+            strings: ["Bienvenue sur AKAG Personnalisation...", "Choisissez votre design !"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        };
+
+        var typed = new Typed("#typing-text", options);
+    </script>
+
+</body>
+</html>
