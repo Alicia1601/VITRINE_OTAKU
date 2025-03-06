@@ -24,7 +24,51 @@ body.home {
     padding: 20px;
     border-radius: 10px;
 }
+span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #2C3E50;
+}
+/* Conteneur principal */
+.super {
+    max-width: 900px; /* Largeur maximale pour une meilleure lisibilité */
+    margin: 50px auto; /* Centrage de la page */
+    padding: 20px;
+    background: #f4f4f4; /* Fond clair pour un bon contraste */
+    border-radius: 10px; /* Coins arrondis pour un effet doux */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center; /* Centrage du texte */
+}
 
+
+/* Mise en avant de l’appel à l’action */
+.choix {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6600; /* Couleur vive pour attirer l’attention */
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 102, 0, 0.1); /* Fond légèrement coloré */
+    border-radius: 40px;
+}
+
+/* Ajout d’une animation pour un effet dynamique */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.super h2, .choix {
+    animation: fadeIn 1s ease-in-out;
+}
 h1 {
     font-size: 2em;
     text-shadow: 2px 2px 10px cyan;
