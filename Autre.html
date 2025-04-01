@@ -3,221 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAG - Personnages Ambigus</title>
+    <title>AKAG - Catalogue de Designs</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<header>
-    <!-- Titre et description de la page -->
-    <div class="welcome-container">
-        <h1>Vous préferez d'autres personnages ? </h1>
-        <p> Choisissez en un ici ! </p>
-    </div>
-</header>
-    <!-- Liste des personnages ambigus -->
-    <div class="personnages-container">
-        
+    <header>
+        <div class="welcome-container">
+            <h1>Catalogue de Designs - Autres Personnages </h1><br>
+            <p class="intro-text">Choisissez un design pour personnaliser votre t-shirt, tableau ou autre article !</p>
+            <p class="choix">Cliquez sur "Choisir ce design" pour nous contacter directement via WhatsApp.</p>
+        </div>
+    </header>
+
+    <main class="gallery">
         <!-- 1. Luffy -->
-        <div class="character">
-            <img src="luffy.jpg" alt="Luffy">
-            <p class="quote">"Je vais devenir le Roi des Pirates, c'est mon rêve, et je ne vais pas m'arrêter avant de
-                l'atteindre !" - Monkey D. Luffy (One Piece)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Luffy"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <div class="character" data-design='{"name": "Monkey D. Luffy", "image": "luffy.jpg"}'>
+            <img src="luffy.jpg" alt="Monkey D. Luffy">
+            <h3>Monkey D. Luffy</h3>
+            <p class="quote">"Je vais devenir le Roi des Pirates, c'est mon rêve, et je ne vais pas m'arrêter avant de l'atteindre !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 2. Zoro -->
-        <div class="character">
-            <img src="zoro.jpg" alt="Zoro">
-            <p class="quote">"Je vais devenir le meilleur épéiste au monde, même si je dois en mourir." - Roronoa Zoro
-                (One Piece)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Zoro"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <div class="character" data-design='{"name": "Roronoa Zoro", "image": "zoro.jpg"}'>
+            <img src="zoro.jpg" alt="Roronoa Zoro">
+            <h3>Roronoa Zoro</h3>
+            <p class="quote">"Je vais devenir le meilleur épéiste au monde, même si je dois en mourir."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-             <!-- Naruto Uzumaki -->
-             <div class="character">
-                <img src="naruto.jpg" alt="Naruto Uzumaki">
-                <p class="quote">"L’échec n’est pas une raison d’abandonner. Tant que je n’ai pas abandonné, je n’ai pas perdu !" - Naruto Uzumaki</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Naruto+Uzumaki" target="_blank">
-                    <button class="btn">Choisir ce design</button>
-                </a>
-            </div>
-    
-            <!-- Gaara -->
-            <div class="character">
-                <img src="gaara.jpg" alt="Gaara">
-                <p class="quote">"Il n’y a que la solitude qui soit éternelle." - Gaara</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Gaara" target="_blank">
-                    <button class="btn">Choisir ce design</button>
-                </a>
-            </div>
-    
-
+        <!-- Naruto Uzumaki -->
+        <div class="character" data-design='{"name": "Naruto Uzumaki", "image": "naruto.jpg"}'>
+            <img src="naruto.jpg" alt="Naruto Uzumaki">
+            <h3>Naruto Uzumaki</h3>
+            <p class="quote">"L’échec n’est pas une raison d’abandonner. Tant que je n’ai pas abandonné, je n’ai pas perdu !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+        <!-- Gaara -->
+        <div class="character" data-design='{"name": "Gaara", "image": "gaara.jpg"}'>
+            <img src="gaara.jpg" alt="Gaara">
+            <h3>Gaara</h3>
+            <p class="quote">"Il n’y a que la solitude qui soit éternelle."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
         <!-- 3. Edward Elric -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Edward Elric", "image": "edward.jpg"}'>
             <img src="edward.jpg" alt="Edward Elric">
-            <p class="quote">"La seule chose que je regrette, c'est de ne pas avoir eu plus de temps avec mon frère." -
-                Edward Elric (Fullmetal Alchemist)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Edward+Elric"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Edward Elric</h3>
+            <p class="quote">"La seule chose que je regrette, c'est de ne pas avoir eu plus de temps avec mon frère."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 4. Natsu Dragneel -->
-        <div class="character">
-            <img src="natsu.jpg" alt="Natsu">
-            <p class="quote">"Je suis un dragon slayer, et je brûlerai tout ce qui se mettra en travers de mon chemin !"
-                - Natsu Dragneel (Fairy Tail)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Natsu"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <div class="character" data-design='{"name": "Natsu Dragneel", "image": "natsu.jpg"}'>
+            <img src="natsu.jpg" alt="Natsu Dragneel">
+            <h3>Natsu Dragneel</h3>
+            <p class="quote">"Je suis un dragon slayer, et je brûlerai tout ce qui se mettra en travers de mon chemin !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 5. Kirito -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Kirito", "image": "kirito.jpg"}'>
             <img src="kirito.jpg" alt="Kirito">
-            <p class="quote">"Je n'abandonne jamais. C'est ce qui me rend unique." - Kirito (Sword Art Online)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Kirito"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Kirito</h3>
+            <p class="quote">"Je n'abandonne jamais. C'est ce qui me rend unique."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 6. Levi Ackerman -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Levi Ackerman", "image": "levi.jpg"}'>
             <img src="levi.jpg" alt="Levi Ackerman">
-            <p class="quote">"Si je n'avais pas été aussi rapide, je serais déjà mort." - Levi Ackerman (Attack on
-                Titan)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Levi"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Levi Ackerman</h3>
+            <p class="quote">"Si je n'avais pas été aussi rapide, je serais déjà mort."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 7. Goku -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Goku", "image": "goku.jpg"}'>
             <img src="goku.jpg" alt="Goku">
-            <p class="quote">"Je vais m'entraîner pour être encore plus fort, je ne m'arrêterai jamais !" - Goku (Dragon
-                Ball)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Goku"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Goku</h3>
+            <p class="quote">"Je vais m'entraîner pour être encore plus fort, je ne m'arrêterai jamais !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 8. Gon Freecss -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Gon Freecss", "image": "gon.jpg"}'>
             <img src="gon.jpg" alt="Gon Freecss">
-            <p class="quote">"Je ferai tout ce qu'il faut pour trouver mon père, même si ça me coûte la vie." - Gon
-                Freecss (Hunter x Hunter)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Gon"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Gon Freecss</h3>
+            <p class="quote">"Je ferai tout ce qu'il faut pour trouver mon père, même si ça me coûte la vie."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 9. Kenshin Himura -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Kenshin Himura", "image": "kenshin.jpg"}'>
             <img src="kenshin.jpg" alt="Kenshin Himura">
-            <p class="quote">"Je ne cherche pas la guerre, mais je ne fuirai pas devant elle." - Kenshin Himura (Rurouni
-                Kenshin)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Kenshin"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Kenshin Himura</h3>
+            <p class="quote">"Je ne cherche pas la guerre, mais je ne fuirai pas devant elle."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 10. Jotaro Kujo -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Jotaro Kujo", "image": "jotaro.jpg"}'>
             <img src="jotaro.jpg" alt="Jotaro Kujo">
-            <p class="quote">"Yare yare daze... Je vais te briser en morceaux." - Jotaro Kujo (JoJo's Bizarre Adventure)
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Jotaro"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Jotaro Kujo</h3>
+            <p class="quote">"Yare yare daze... Je vais te briser en morceaux."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- 11. Nier -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Nier", "image": "nier.jpg"}'>
             <img src="nier.jpg" alt="Nier">
-            <p class="quote">"Tout ce que je fais, je le fais pour sauver l'humanité." - Nier (Nier: Automata)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Nier"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Nier</h3>
+            <p class="quote">"Tout ce que je fais, je le fais pour sauver l'humanité."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-        <!-- 1. Emma -->
-        <div class="character">
+        <!-- 12. Emma -->
+        <div class="character" data-design='{"name": "Emma", "image": "emma.jpg"}'>
             <img src="emma.jpg" alt="Emma">
-            <p class="quote">"Je vais tout faire pour que tout le monde vive ! Nous allons tous nous échapper, c'est
-                promis !" - Emma (The Promised Neverland)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Emma"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Emma</h3>
+            <p class="quote">"Je vais tout faire pour que tout le monde vive ! Nous allons tous nous échapper, c'est promis !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- 2. Ray -->
-        <div class="character">
+        <!-- 13. Ray -->
+        <div class="character" data-design='{"name": "Ray", "image": "ray.jpg"}'>
             <img src="ray.jpg" alt="Ray">
-            <p class="quote">"Je vais jouer ma propre carte. C'est à vous de choisir si vous me suivez." - Ray (The
-                Promised Neverland)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Ray"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Ray</h3>
+            <p class="quote">"Je vais jouer ma propre carte. C'est à vous de choisir si vous me suivez."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- 3. Isabella (Maman) -->
-        <div class="character">
+        <!-- 14. Isabella -->
+        <div class="character" data-design='{"name": "Isabella", "image": "isabella.jpg"}'>
             <img src="isabella.jpg" alt="Isabella">
-            <p class="quote">"Je suis la Maman, je serai toujours avec vous, jusqu'à ce que vous me fassiez confiance."
-                - Isabella (The Promised Neverland)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Isabella"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Isabella</h3>
+            <p class="quote">"Je suis la Maman, je serai toujours avec vous, jusqu'à ce que vous me fassiez confiance."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-        <!-- 4. Elise de Clovis -->
-        <div class="character">
+        <!-- 15. Elise de Clovis -->
+        <div class="character" data-design='{"name": "Elise de Clovis", "image": "elise.jpg"}'>
             <img src="elise.jpg" alt="Elise de Clovis">
-            <p class="quote">"Je suis la reine, je vais guider ce pays vers la paix et la prospérité." - Elise de Clovis
-                (Doctor Elise)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Elise+de+Clovis"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Elise de Clovis</h3>
+            <p class="quote">"Je suis la reine, je vais guider ce pays vers la paix et la prospérité."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        
-        <!-- 6. Prince Eiji -->
-        <div class="character">
+        <!-- 16. Prince Eiji -->
+        <div class="character" data-design='{"name": "Prince Eiji", "image": "prince_eiji.jpg"}'>
             <img src="prince_eiji.jpg" alt="Prince Eiji">
-            <p class="quote">"Elise, tu es plus précieuse pour moi que tout le royaume." - Prince Eiji (Doctor Elise)
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Prince+Eiji"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Prince Eiji</h3>
+            <p class="quote">"Elise, tu es plus précieuse pour moi que tout le royaume."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
+    </main><br>
 
-    </div>
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <h2>Vous ne trouvez pas le design parfait ?</h2><br>
+        <p>Envoyez-moi votre propre idée ou image pour une création personnalisée !</p><br><br>
+        <a href="https://wa.me/+22891412003?text=Bonjour, je voudrais proposer mon propre design." class="btn contact-btn">Contactez-moi</a>
+    </section><br>
 
-    <a href="index.html" class="back-btn">⬅ Retour à l'accueil</a>
+    <!-- Bouton Retour -->
+    <a href="index.html" class="back-btn">⬅ Retour à l’accueil</a><br>
 
-    <div class="footer">
-        <p>Créé avec passion par AKAG</p>
-    </div>
+    <footer class="footer">
+        <p>© 2025 AKAG - Designs Personnalisés</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

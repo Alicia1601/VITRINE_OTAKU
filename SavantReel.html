@@ -1,391 +1,290 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Génies Réels</title>
+    <title>AKAG - Génies Réels</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="welcome-container">
+            <h1>Génies Réels</h1>
+            <p class="intro-text">"L'histoire de l'humanité est écrite par ceux qui osent penser différemment. Derrière chaque grande découverte se cache un esprit insatiable, un génie visionnaire prêt à défier l’inconnu."</p>
+            <p class="intro-text">Découvrez ces figures légendaires à travers nos designs uniques. Choisissez votre génie favori et affichez son éclat sur un t-shirt, carnet ou autre article personnalisé !</p>
+            <p class="choix">Cliquez sur "Choisir ce génie" pour nous contacter via WhatsApp.</p>
+        </div>
+    </header>
 
-    <h1>Génies Réels</h1>
-                                                           
-   <div class="super"><h2>"L'histoire de l'humanité est écrite par ceux qui osent penser différemment.  Derrière chaque grande découverte se cache un esprit insatiable, un génie visionnaire prêt à défier l’inconnu. De Einstein à Tesla, en passant par Turing et Marie Curie, ces esprits brillants ont repoussé les limites du possible.  Voici ceux qui ont changé le cours de l’histoire, une idée à la fois."</h2> 
-         <h2> Découvrez ces figures légendaires à travers nos designs uniques. Choisissez votre génie favori et affichez son éclat sur un accessoire personnalisé !</h2></div> 
-         <br> <span class="choix"> Cliquez sur "Choisir ce génie" et remplissez le formulaire pour commander votre t-shirt, carnet ou autre article personnalisé !</span>
-        
-
-    <div class="gallery">
-
+    <main class="gallery">
         <!-- Albert Einstein -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Albert Einstein", "image": "einstein.jpg"}'>
             <img src="einstein.jpg" alt="Albert Einstein">
-            <p class="quote">"L'imagination est plus importante que le savoir." - Albert Einstein</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Albert+Einstein"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Albert Einstein</h3>
+            <p class="quote">"L'imagination est plus importante que le savoir."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Grigori Perelman -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Grigori Perelman", "image": "perelman.jpg"}'>
             <img src="perelman.jpg" alt="Grigori Perelman">
-            <p class="quote">"Je ne suis pas intéressé par l'argent ou la célébrité. Je veux seulement comprendre." -
-                Grigori Perelman</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Grigori+Perelman"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Grigori Perelman</h3>
+            <p class="quote">"Je ne suis pas intéressé par l'argent ou la célébrité. Je veux seulement comprendre."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Alan Turing -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Alan Turing", "image": "turing.jpg"}'>
             <img src="turing.jpg" alt="Alan Turing">
-            <p class="quote">"Parfois, c'est les gens dont on imagine peu de choses qui font des choses que personne
-                n'aurait pu imaginer." - Alan Turing</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Alan+Turing"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Alan Turing</h3>
+            <p class="quote">"Parfois, c'est les gens dont on imagine peu de choses qui font des choses que personne n'aurait pu imaginer."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Léonard de Vinci -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Léonard de Vinci", "image": "leonard.jpg"}'>
             <img src="leonard.jpg" alt="Léonard de Vinci">
-            <p class="quote">"La simplicité est l'ultime sophistication." - Léonard de Vinci</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Léonard+de+Vinci"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Léonard de Vinci</h3>
+            <p class="quote">"La simplicité est l'ultime sophistication."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
-        
-
         <!-- Stephen Hawking -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Stephen Hawking", "image": "hawking.jpg"}'>
             <img src="hawking.jpg" alt="Stephen Hawking">
-            <p class="quote">"Peu importe à quel point la vie peut sembler difficile, il y a toujours quelque chose que
-                vous pouvez faire et réussir." - Stephen Hawking</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Stephen+Hawking"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Stephen Hawking</h3>
+            <p class="quote">"Peu importe à quel point la vie peut sembler difficile, il y a toujours quelque chose que vous pouvez faire et réussir."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
         <!-- Dr. Ayanna Howard -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Ayanna Howard", "image": "ayanna.jpg"}'>
             <img src="ayanna.jpg" alt="Dr. Ayanna Howard">
-            <p class="quote">"La technologie doit être conçue pour servir l'humanité." - Dr. Ayanna Howard</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Ayanna+Howard"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Ayanna Howard</h3>
+            <p class="quote">"La technologie doit être conçue pour servir l'humanité."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-          <!-- Personnages scientifiques-->
-
-          <div class="character">
-            <img src="cheikh.jpg" alt="Cheikh Anta Diop ">
-            <p class="quote">"L'Afrique est la mère du monde. Elle a nourri l'humanité." - Cheikh Anta Diop</p>
-            <a href=" https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Cheikh+Anta+Diop
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Cheikh Anta Diop -->
+        <div class="character" data-design='{"name": "Cheikh Anta Diop", "image": "cheikh.jpg"}'>
+            <img src="cheikh.jpg" alt="Cheikh Anta Diop">
+            <h3>Cheikh Anta Diop</h3>
+            <p class="quote">"L'Afrique est la mère du monde. Elle a nourri l'humanité."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
-        <div class="character">
-            <img src="wangari.jpg" alt="Wangari Maathai ">
-            <p class="quote">"La terre n’appartient pas à l’homme, l’homme appartient à la terre." - Wangari Maathai</p>
-            <a href=" https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Wangari+Maathai
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Wangari Maathai -->
+        <div class="character" data-design='{"name": "Wangari Maathai", "image": "wangari.jpg"}'>
+            <img src="wangari.jpg" alt="Wangari Maathai">
+            <h3>Wangari Maathai</h3>
+            <p class="quote">"La terre n’appartient pas à l’homme, l’homme appartient à la terre."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Hadiyah-Nicole Green -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Hadiyah-Nicole Green", "image": "nicole.jpg"}'>
             <img src="nicole.jpg" alt="Dr. Hadiyah-Nicole Green">
-            <p class="quote">"L'innovation peut être un moteur pour sauver des vies." - Dr. Hadiyah-Nicole Green</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Hadiyah-Nicole+Green"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Hadiyah-Nicole Green</h3>
+            <p class="quote">"L'innovation peut être un moteur pour sauver des vies."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Mae Jemison -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Mae Jemison", "image": "jemison.jpg"}'>
             <img src="jemison.jpg" alt="Dr. Mae Jemison">
-            <p class="quote">"Ne laissez pas les perceptions limitées des autres vous définir." - Dr. Mae Jemison</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Mae+Jemison"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Mae Jemison</h3>
+            <p class="quote">"Ne laissez pas les perceptions limitées des autres vous définir."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- George Carruthers -->
-        <div class="character">
+        <div class="character" data-design='{"name": "George Carruthers", "image": "george.jpg"}'>
             <img src="george.jpg" alt="George Carruthers">
-            <p class="quote">"L'espace est notre prochaine frontière à explorer." - George Carruthers</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=George+Carruthers"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>George Carruthers</h3>
+            <p class="quote">"L'espace est notre prochaine frontière à explorer."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Mark Dean -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Mark Dean", "image": "mark.jpg"}'>
             <img src="mark.jpg" alt="Dr. Mark Dean">
-            <p class="quote">"L'innovation est le moteur du progrès technologique." - Dr. Mark Dean</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Mark+Dean"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Mark Dean</h3>
+            <p class="quote">"L'innovation est le moteur du progrès technologique."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Aprille Ericsson -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Aprille Ericsson", "image": "ericsson.jpg"}'>
             <img src="ericsson.jpg" alt="Dr. Aprille Ericsson">
-            <p class="quote">"Les étoiles ne sont pas la limite, mais le début de notre exploration." - Dr. Aprille
-                Ericsson</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Aprille+Ericsson"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Aprille Ericsson</h3>
+            <p class="quote">"Les étoiles ne sont pas la limite, mais le début de notre exploration."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Lonnie Johnson -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Lonnie Johnson", "image": "johnson.jpg"}'>
             <img src="johnson.jpg" alt="Dr. Lonnie Johnson">
-            <p class="quote">"L'ingéniosité est la clé pour transformer des idées en réalité." - Dr. Lonnie Johnson</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Lonnie+Johnson"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Lonnie Johnson</h3>
+            <p class="quote">"L'ingéniosité est la clé pour transformer des idées en réalité."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. James West -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. James West", "image": "james_west.jpg"}'>
             <img src="james_west.jpg" alt="Dr. James West">
-            <p class="quote">"La curiosité est le début de chaque grande invention." - Dr. James West</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+James+West"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. James West</h3>
+            <p class="quote">"La curiosité est le début de chaque grande invention."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Dr. Gladys West -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Dr. Gladys West", "image": "gladys_west.jpg"}'>
             <img src="gladys_west.jpg" alt="Dr. Gladys West">
-            <p class="quote">"Les mathématiques sont le langage universel de la compréhension." - Dr. Gladys West</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Gladys+West"
-                target="_blank">
-                <button class="btn">Choisir ce génie</button>
-            </a>
+            <h3>Dr. Gladys West</h3>
+            <p class="quote">"Les mathématiques sont le langage universel de la compréhension."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
-       
-
         <!-- Benjamin Banneker -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Benjamin Banneker", "image": "benjamin.jpg"}'>
             <img src="benjamin.jpg" alt="Benjamin Banneker">
-            <p class="quote">"N'abandonne jamais la recherche de la vérité, même dans les moments les plus difficiles."
-                - Benjamin Banneker</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Benjamin+Banneker"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Benjamin Banneker</h3>
+            <p class="quote">"N'abandonne jamais la recherche de la vérité, même dans les moments les plus difficiles."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- George Washington Carver -->
-        <div class="character">
+        <div class="character" data-design='{"name": "George Washington Carver", "image": "whashington.jpg"}'>
             <img src="whashington.jpg" alt="George Washington Carver">
-            <p class="quote">"Je n'ai pas cherché la richesse, mais j'ai cherché à être utile." - George Washington
-                Carver</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=George+Washington+Carver"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>George Washington Carver</h3>
+            <p class="quote">"Je n'ai pas cherché la richesse, mais j'ai cherché à être utile."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Patricia Bath -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Patricia Bath", "image": "bath.jpg"}'>
             <img src="bath.jpg" alt="Patricia Bath">
-            <p class="quote">"Il n'y a pas de limites à ce que l'on peut accomplir si l'on est prêt à persévérer." -
-                Patricia Bath</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Patricia+Bath"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Patricia Bath</h3>
+            <p class="quote">"Il n'y a pas de limites à ce que l'on peut accomplir si l'on est prêt à persévérer."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Erwin Schrödinger -->
-<div class="character">
-    <img src="schrodinger.jpg" alt="Erwin Schrödinger">
-    <p class="quote">"La tâche est de ne pas voir ce que personne n’a encore vu, mais de penser ce que personne n’a encore pensé à propos de ce que tout le monde voit." - Erwin Schrödinger</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Erwin+Schrodinger" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-
-<!-- Michel Nostradamus -->
-<div class="character">
-    <img src="nostradamus.jpg" alt="Michel Nostradamus">
-    <p class="quote">"Le présent est forgé par les échos du passé et les ombres de l’avenir." - Michel Nostradamus</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Michel+Nostradamus" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Roger Penrose -->
-<div class="character">
-    <img src="penrose.jpg" alt="Roger Penrose">
-    <p class="quote">"Les mathématiques ne sont pas simplement une invention humaine, elles existent indépendamment et nous les découvrons." - Roger Penrose</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Roger+Penrose" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Hubert Reeves -->
-<div class="character">
-    <img src="reeves.jpg" alt="Hubert Reeves">
-    <p class="quote">"Nous sommes des poussières d’étoiles devenues conscientes." - Hubert Reeves</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Hubert+Reeves" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Carl Sagan -->
-<div class="character">
-    <img src="sagan.jpg" alt="Carl Sagan">
-    <p class="quote">"L'absence de preuve n'est pas la preuve de l'absence." - Carl Sagan</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Carl+Sagan" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Nicolas Copernic -->
-<div class="character">
-    <img src="copernic.jpg" alt="Nicolas Copernic">
-    <p class="quote">"Pour connaître le mouvement des corps célestes, il faut d'abord comprendre que la Terre n’est pas le centre de l’univers." - Nicolas Copernic</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Nicolas+Copernic" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Neil deGrasse Tyson -->
-<div class="character">
-    <img src="tyson.jpg" alt="Neil deGrasse Tyson">
-    <p class="quote">"Le bon truc à propos de la science, c’est qu’elle est vraie, que vous y croyiez ou non." - Neil deGrasse Tyson</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Neil+deGrasse+Tyson" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
+        <div class="character" data-design='{"name": "Erwin Schrödinger", "image": "schrodinger.jpg"}'>
+            <img src="schrodinger.jpg" alt="Erwin Schrödinger">
+            <h3>Erwin Schrödinger</h3>
+            <p class="quote">"La tâche est de ne pas voir ce que personne n’a encore vu, mais de penser ce que personne n’a encore pensé à propos de ce que tout le monde voit."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Michel Nostradamus -->
+        <div class="character" data-design='{"name": "Michel Nostradamus", "image": "nostradamus.jpg"}'>
+            <img src="nostradamus.jpg" alt="Michel Nostradamus">
+            <h3>Michel Nostradamus</h3>
+            <p class="quote">"Le présent est forgé par les échos du passé et les ombres de l’avenir."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </divBROKEN LINKS HERE>
+        <!-- Roger Penrose -->
+        <div class="character" data-design='{"name": "Roger Penrose", "image": "penrose.jpg"}'>
+            <img src="penrose.jpg" alt="Roger Penrose">
+            <h3>Roger Penrose</h3>
+            <p class="quote">"Les mathématiques ne sont pas simplement une invention humaine, elles existent indépendamment et nous les découvrons."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Hubert Reeves -->
+        <div class="character" data-design='{"name": "Hubert Reeves", "image": "reeves.jpg"}'>
+            <img src="reeves.jpg" alt="Hubert Reeves">
+            <h3>Hubert Reeves</h3>
+            <p class="quote">"Nous sommes des poussières d’étoiles devenues conscientes."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Carl Sagan -->
+        <div class="character" data-design='{"name": "Carl Sagan", "image": "sagan.jpg"}'>
+            <img src="sagan.jpg" alt="Carl Sagan">
+            <h3>Carl Sagan</h3>
+            <p class="quote">"L'absence de preuve n'est pas la preuve de l'absence."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Nicolas Copernic -->
+        <div class="character" data-design='{"name": "Nicolas Copernic", "image": "copernic.jpg"}'>
+            <img src="copernic.jpg" alt="Nicolas Copernic">
+            <h3>Nicolas Copernic</h3>
+            <p class="quote">"Pour connaître le mouvement des corps célestes, il faut d'abord comprendre que la Terre n’est pas le centre de l’univers."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Neil deGrasse Tyson -->
+        <div class="character" data-design='{"name": "Neil deGrasse Tyson", "image": "tyson.jpg"}'>
+            <img src="tyson.jpg" alt="Neil deGrasse Tyson">
+            <h3>Neil deGrasse Tyson</h3>
+            <p class="quote">"Le bon truc à propos de la science, c’est qu’elle est vraie, que vous y croyiez ou non."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
         <!-- Marie Maynard Daly -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Marie Maynard Daly", "image": "maynard.jpg"}'>
             <img src="maynard.jpg" alt="Marie Maynard Daly">
-            <p class="quote">"La science est une aventure humaine, où la curiosité et la persévérance mènent à la
-                découverte." - Marie Maynard Daly</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Marie+Maynard+Daly"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Marie Maynard Daly</h3>
+            <p class="quote">"La science est une aventure humaine, où la curiosité et la persévérance mènent à la découverte."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Alice Ball -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Alice Ball", "image": "alice.jpg"}'>
             <img src="alice.jpg" alt="Alice Ball">
-            <p class="quote">"Ne cesse jamais de poursuivre ton objectif, peu importe les obstacles." - Alice Ball</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Alice+Ball"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Alice Ball</h3>
+            <p class="quote">"Ne cesse jamais de poursuivre ton objectif, peu importe les obstacles."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Mae Jemison -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Mae Jemison", "image": "mae-jemison.jpg"}'>
             <img src="mae-jemison.jpg" alt="Mae Jemison">
-            <p class="quote">"N'abandonne jamais tes rêves. La voie vers le succès est pavée de défis." - Mae Jemison
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Mae+Jemison"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Mae Jemison</h3>
+            <p class="quote">"N'abandonne jamais tes rêves. La voie vers le succès est pavée de défis."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
         </div>
-
         <!-- Guion S. Bluford Jr. -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Guion S. Bluford Jr.", "image": "bluford.jpg"}'>
             <img src="bluford.jpg" alt="Guion S. Bluford Jr.">
-            <p class="quote">"L'éducation et l'effort personnel ouvrent toutes les portes." - Guion S. Bluford Jr.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Guion+S.+Bluford+Jr."
-            target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
+            <h3>Guion S. Bluford Jr.</h3>
+            <p class="quote">"L'éducation et l'effort personnel ouvrent toutes les portes."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Albert Einstein (2ème version) -->
+        <div class="character" data-design='{"name": "Albert Einstein", "image": "Albert.jpg"}'>
+            <img src="Albert.jpg" alt="Albert Einstein">
+            <h3>Albert Einstein</h3>
+            <p class="quote">"L’éducation est ce qui reste après qu’on ait oublié ce qu’on a appris à l’école."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Marie Curie -->
+        <div class="character" data-design='{"name": "Marie Curie", "image": "Curie.jpg"}'>
+            <img src="Curie.jpg" alt="Marie Curie">
+            <h3>Marie Curie</h3>
+            <p class="quote">"Rien dans la vie n'est à craindre, tout est à comprendre. Il est temps de comprendre davantage, afin de craindre moins."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Isaac Newton -->
+        <div class="character" data-design='{"name": "Isaac Newton", "image": "Newton.jpg"}'>
+            <img src="Newton.jpg" alt="Isaac Newton">
+            <h3>Isaac Newton</h3>
+            <p class="quote">"Si j'ai vu plus loin, c'est en montant sur les épaules de géants."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Nikola Tesla -->
+        <div class="character" data-design='{"name": "Nikola Tesla", "image": "Tesla.jpg"}'>
+            <img src="Tesla.jpg" alt="Nikola Tesla">
+            <h3>Nikola Tesla</h3>
+            <p class="quote">"Le présent est à eux, mais l'avenir, pour lequel je travaille, est à moi."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Isaac Newton (2ème version) -->
+        <div class="character" data-design='{"name": "Isaac Newton", "image": "tony.jpg"}'>
+            <img src="tony.jpg" alt="Isaac Newton">
+            <h3>Isaac Newton</h3>
+            <p class="quote">"Ce n'est pas la force, mais la persévérance, qui fait les grandes œuvres."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+        <!-- Charles Drew -->
+        <div class="character" data-design='{"name": "Charles Drew", "image": "drew.jpg"}'>
+            <img src="drew.jpg" alt="Charles Drew">
+            <h3>Charles Drew</h3>
+            <p class="quote">"L'esprit humain, une fois éclairé, est un instrument sans limite."</p>
+            <button class="btn choose-design">Choisir ce génie</button>
+        </div>
+    </main><br>
 
-    <div class="character">
-        <img src="Albert.jpg" alt="Albert Einstein ">
-        <p class="quote">"L’éducation est ce qui reste après qu’on ait oublié ce qu’on a appris à l’école." - Albert Einstein</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Albert+Einstein
-        " target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <h2>Pas trouvé le génie qui vous inspire ?</h2><br>
+        <p>Envoyez-nous votre idée ou image pour un design personnalisé unique !</p><hr>
+        <a href="https://wa.me/+22891412003?text=Bonjour, nous voudrions proposer notre propre design de génie réel." class="btn contact-btn">Contactez-nous</a>
+    </section><br>
 
-    <div class="character">
-        <img src="Curie.jpg" alt="Marie Curie ">
-        <p class="quote"> "Rien dans la vie n'est à craindre, tout est à comprendre. Il est temps de comprendre davantage, afin de craindre moins." - Marie Curie </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Marie+Curie
-        " target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
+    <!-- Bouton Retour -->
+    <a href="index.html" class="back-btn">⬅ Retour à l’accueil</a>
 
-    <div class="character">
-        <img src="Newton.jpg" alt="Isaac Newton ">
-        <p class="quote"> "Si j'ai vu plus loin, c'est en montant sur les épaules de géants." - Isaac Newton </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Isaac+Newton
-        " target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
+    <footer class="footer">
+        <p>© 2025 AKAG - Designs Personnalisés</p>
+    </footer>
 
-    <div class="character">
-        <img src="Tesla.jpg" alt="Nikola Tesla ">
-        <p class="quote"> "Le présent est à eux, mais l'avenir, pour lequel je travaille, est à moi." - Nikola Tesla </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Nikola+Tesla
-        
-        " target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
-
-    <div class="character">
-        <img src="tony.jpg" alt="Isaac Newton ">
-        <p class="quote"> "Ce n'est pas la force, mais la persévérance, qui fait les grandes œuvres."- Isaac Newton </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Isaac+Newton
-        " target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>  
-
-    <!-- Charles Drew -->
-    <div class="character">
-        <img src="drew.jpg" alt="Charles Drew">
-        <p class="quote">"L'esprit humain, une fois éclairé, est un instrument sans limite." - Charles Drew</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Charles+Drew"
-            target="_blank">
-            <button class="btn">Choisir ce design</button>
-        </a>
-    </div>
-</div>
-
-
-    <a href="index.html" class="back-btn">⬅️ Retour à l'accueil</a>
-    <div class="footer">
-        <p>Créé avec passion par AKAG</p>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

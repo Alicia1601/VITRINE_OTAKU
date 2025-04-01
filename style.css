@@ -1,46 +1,57 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
 body {
-    color: rgb(248, 225, 245);
+    color: #666; /* Remplace rgb(248, 225, 245) par le gris d’AKAGIS */
     font-family: 'Arial', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;           /* Laisse la hauteur se calculer en fonction du contenu */
-    min-height: 100vh;      /* La hauteur du body sera d'au moins la hauteur de la fenêtre */
-    margin: 0;              /* Enlève les marges par défaut */
-
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9; /* Remplace le fond par le gris clair d’AKAGIS */
 }
 
 body.home {
     background: url('background.jpg') no-repeat center center/cover;
-    
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Container */
 .container {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(128, 0, 128, 0.1); /* Remplace rgba(0, 0, 0, 0.7) par un violet clair transparent */
     padding: 20px;
     border-radius: 10px;
-    color: #36055f;
-}
-span{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    color: #2C3E50;
-}
-/* Conteneur principal */
-.super {
-    max-width: 900px; /* Largeur maximale pour une meilleure lisibilité */
-    margin: 50px auto; /* Centrage de la page */
-    padding: 20px;
-    background: #f4f4f4; /* Fond clair pour un bon contraste */
-    border-radius: 10px; /* Coins arrondis pour un effet doux */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    text-align: center; /* Centrage du texte */
+    color: #800080; /* Remplace #36055f par le violet principal */
 }
 
+/* Span */
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #800080; /* Remplace #2C3E50 par le violet principal */
+}
+
+/* Conteneur principal */
+.super {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
 /* Mise en avant de l’appel à l’action */
 .choix {
@@ -48,11 +59,30 @@ span{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    color: #ff6600; /* Couleur vive pour attirer l’attention */
+    color: #800080; /* Remplace #ff6600 par le violet principal */
     margin-top: 20px;
     padding: 10px;
-    background: rgba(255, 102, 0, 0.1); /* Fond légèrement coloré */
+    background: rgba(128, 0, 128, 0.1); /* Remplace rgba(255, 102, 0, 0.1) par un violet clair transparent */
     border-radius: 40px;
+}
+.intro-text {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #4B5563; /* Gris foncé pour lisibilité */
+    line-height: 1.6; /* Espacement pour une lecture fluide */
+    font-style: italic; /* Italique pour une touche élégante */
+    background: linear-gradient(to right, rgba(109, 40, 217, 0.1), rgba(167, 139, 250, 0.1)); /* Dégradé subtil violet */
+    padding: 10px 20px; /* Espacement interne pour effet "bloc" */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 6px rgba(109, 40, 217, 0.15); /* Ombre légère */
+    max-width: 800px; /* Limite la largeur pour un effet centré */
+    text-align: center; /* Alignement centré pour cohérence */
+    transition: transform 0.3s ease; /* Animation subtile */
+}
+
+.intro-text:hover {
+    transform: translateY(-3px); /* Légère élévation au survol */
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.25); /* Ombre plus prononcée */
 }
 
 /* Ajout d’une animation pour un effet dynamique */
@@ -69,19 +99,28 @@ span{
 
 .super h2, .choix {
     animation: fadeIn 1s ease-in-out;
-}
-h1 {
-    font-size: 2em;
-    text-shadow: 2px 2px 10px cyan;
+    color: rgb(0, 5, 10);
+    font-weight: bold;
+    background: #e7f1ee;
+    border-radius: 20px;
 }
 
+/* Titres h1 */
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px #EDE9FE; /* Remplace cyan et rouge par le violet clair */
+    text-align: center;
+    color: #800080; /* Ajout d’une couleur pour le texte */
+}
+
+/* Boutons */
 .buttons {
     margin-top: 20px;
 }
 
 .btn {
-    background: linear-gradient(45deg, #ff0000, #ff7300);
-    color: white;
+    background: linear-gradient(45deg, #800080, #660066); /* Remplace #ff0000, #ff7300 par des nuances de violet */
+    color: #fff; /* Texte blanc */
     border: none;
     padding: 15px 30px;
     margin: 10px;
@@ -92,15 +131,11 @@ h1 {
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #ff7300, #ff0000);
+    background: linear-gradient(45deg, #660066, #800080); /* Inverse le gradient pour l’effet hover */
     transform: scale(1.1);
 }
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 10px red;
-}
 
+/* Galerie */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +145,7 @@ h1 {
 }
 
 .character {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(128, 0, 128, 0.1); /* Remplace rgba(0, 0, 0, 0.8) par un violet clair transparent */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -124,24 +159,25 @@ h1 {
 
 .quote {
     font-style: italic;
-    color: #ccc;
+    color: #666; /* Remplace #ccc par le gris d’AKAGIS */
     margin: 10px 0;
 }
 
+/* Bouton de retour */
 .back-btn {
     display: block;
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    background: red;
+    background: #800080; /* Remplace rouge par violet */
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 .back-btn:hover {
-    background: darkred;
+    background: #660066; /* Remplace darkred par une nuance plus foncée de violet */
 }
 
 /* Styles pour la page des Personnages Ambigus */
@@ -156,39 +192,17 @@ h1 {
     width: 250px;
     text-align: center;
     margin: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #fff; /* Remplace rgba(0, 0, 0, 0.7) par blanc */
     padding: 20px;
     border-radius: 10px;
-    color: white;
+    color: #666; /* Remplace blanc par gris pour le texte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d’une ombre pour cohérence */
 }
 
 .personnage-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-}
-
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Body and Background */
-body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
 }
 
 /* Container for the Welcome Section */
@@ -202,49 +216,26 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    color: #36055f;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #4b637a;
+    color: #800080; /* Remplace #36055f par violet */
 }
 
 #welcome-message {
     font-size: 1.2rem;
-    color: #34495E;
+    color: #666; /* Remplace #34495E par gris */
     font-weight: 600;
     margin-top: 20px;
     font-style: italic;
 }
 
 /* Style for the Characters Section */
-.personnages-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.personnage {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
 .personnage:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .personnage-btn {
-    background-color: #1abc9c;
-    color: white;
+    background-color: #800080; /* Remplace #1abc9c par violet */
+    color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -254,7 +245,7 @@ h1 {
 }
 
 .personnage-btn:hover {
-    background-color: #16a085;
+    background-color: #660066; /* Remplace #16a085 par une nuance plus foncée de violet */
     transform: scale(1.1);
 }
 
@@ -277,27 +268,28 @@ h1 {
 
 .character-info p {
     font-size: 1.8rem;
-    color: #526980;
+    color: #800080; /* Remplace #526980 par violet */
     margin-top: 20px;
     font-weight: bold;
 }
 
 .character-info blockquote {
     font-size: 1.2rem;
-    color: #7F8C8D;
+    color: #666; /* Remplace #7F8C8D par gris */
     font-style: italic;
     margin-top: 10px;
     padding: 10px;
-    border-left: 5px solid #1abc9c;
+    border-left: 5px solid #800080; /* Remplace #1abc9c par violet */
 }
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #2C3E50;
-    color: white;
+    background-color: #800080; /* Remplace #2C3E50 par violet */
+    color: #fff;
     margin-top: 40px;
+    position: static; /* Remplace position: absolute pour cohérence avec AKAGIS */
 }
 
 .footer p {
