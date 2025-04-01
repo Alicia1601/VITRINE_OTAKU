@@ -3,233 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Génies Légendaires</title>
+    <title>AKAG - Génies Légendaires</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="welcome-container">
+            <h1>Génies Légendaires</h1><br>
+            <p class="intro-text">Les stratèges de l’ombre : calculateurs, rusés et toujours un coup d’avance.</p>
+            <p class="intro-text">Affichez leur génie avec un design percutant sur vos articles préférés !</p>
+            <p class="choix">Cliquez sur "Choisir ce design" pour nous contacter via WhatsApp.</p>
+        </div>
+    </header>
 
-    <h1>Génies </h1><br>
-   <div class="super"> <span class="choix"> Les stratèges de l’ombre</span>
-    <h2>"Les animes nous ont offert certains des esprits les plus affûtés jamais imaginés. Calculateur, rusé, manipulateur ou simplement trop brillant pour ce monde, chaque génie d’anime est une arme redoutable dans son propre univers. Que ce soit un détective hors pair ou un maître du jeu, leur intelligence les place toujours un coup d’avance. <br> Découvrez les architectes du destin, les stratèges de l’ombre."</h2>
-    <h2>Votre personnage préféré est-il celui qui contrôle tout depuis l’ombre ? Faites-le savoir avec un design percutant sur un accessoire à votre image !</h2></div>
-<span class="choix"> Cliquez sur "Choisir ce design" et remplissez le formulaire pour commander votre t-shirt, carnet ou autre article personnalisé !</span>
-    
-    
-    <div class="gallery">
-       
-        <div class="character">
+    <main class="gallery">
+        <!-- L -->
+        <div class="character" data-design='{"name": "L", "image": "L.jpg"}'>
             <img src="L.jpg" alt="L">
-            <p class="quote">"Je suis un génie, mais je me suis aussi entraîné pour cela. C'est ça la vérité." - L (Death Note)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=L" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>L</h3>
+            <p class="quote">"Je suis un génie, mais je me suis aussi entraîné pour cela. C'est ça la vérité."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-        <div class="character">
-            <img src="shika.jpg" alt="shika">
-            <p class="quote">"C’est trop fatiguant de toujours réfléchir, mais si je ne réfléchis pas, je ne peux pas avancer." - Shikamaru Nara (Naruto)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Shikamaru+Nara" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Shikamaru Nara -->
+        <div class="character" data-design='{"name": "Shikamaru Nara", "image": "shika.jpg"}'>
+            <img src="shika.jpg" alt="Shikamaru Nara">
+            <h3>Shikamaru Nara</h3>
+            <p class="quote">"C’est trop fatiguant de toujours réfléchir, mais si je ne réfléchis pas, je ne peux pas avancer."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-        <div class="character">
-            <img src="gojo.jpg" alt="Gojo">
-            <p class="quote">"Je suis un génie, mais même un génie ne peut pas toujours gagner tout seul." - Satoru Gojo (Jujutsu Kaisen)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Satoru+Gojo " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Satoru Gojo -->
+        <div class="character" data-design='{"name": "Satoru Gojo", "image": "gojo.jpg"}'>
+            <img src="gojo.jpg" alt="Satoru Gojo">
+            <h3>Satoru Gojo</h3>
+            <p class="quote">"Je suis un génie, mais même un génie ne peut pas toujours gagner tout seul."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-        <div class="character">
+        <!-- Kira -->
+        <div class="character" data-design='{"name": "Kira", "image": "kita.jpg"}'>
             <img src="kita.jpg" alt="Kira">
-            <p class="quote"> "Ce monde n’a aucune valeur. Il est nécessaire de le réformer !" - Kira (Code Geass)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Kira" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Kira</h3>
+            <p class="quote">"Ce monde n’a aucune valeur. Il est nécessaire de le réformer !"</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        
-        <div class="character">
-            <img src="Aizen.jpg" alt="Aizen">
-            <p class="quote">"Je suis un homme d'une grande ambition. Tout ce que je fais, je le fais avec une profonde pensée." - Sosuke Aizen (Bleach)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Sosuke+Aizen" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Sosuke Aizen -->
+        <div class="character" data-design='{"name": "Sosuke Aizen", "image": "Aizen.jpg"}'>
+            <img src="Aizen.jpg" alt="Sosuke Aizen">
+            <h3>Sosuke Aizen</h3>
+            <p class="quote">"Je suis un homme d'une grande ambition. Tout ce que je fais, je le fais avec une profonde pensée."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        
-        <div class="character">
-            <img src="senku.jpg" alt="Senku">
-            <p class="quote">"J'en suis certain à dix milliard de pourcent." - Senku Ishigami (Dr. Stone)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Lelouch+vi+Britannia" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Senku Ishigami -->
+        <div class="character" data-design='{"name": "Senku Ishigami", "image": "senku.jpg"}'>
+            <img src="senku.jpg" alt="Senku Ishigami">
+            <h3>Senku Ishigami</h3>
+            <p class="quote">"J'en suis certain à dix milliard de pourcent."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
-            <img src="lelouch.jpg" alt="Lelouch">
-            <p class="quote">"L'ennemi ne doit pas être pris à la légère. C’est une erreur fatale de croire que l’on peut gagner sans risque." - Lelouch vi Britannia (Code Geass)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Lelouch+vi+Britannia
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Lelouch vi Britannia -->
+        <div class="character" data-design='{"name": "Lelouch vi Britannia", "image": "lelouch.jpg"}'>
+            <img src="lelouch.jpg" alt="Lelouch vi Britannia">
+            <h3>Lelouch vi Britannia</h3>
+            <p class="quote">"L'ennemi ne doit pas être pris à la légère. C’est une erreur fatale de croire que l’on peut gagner sans risque."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
-            <img src="shogo.jpg" alt="Shogo Makishima ">
-            <p class="quote">"L'homme n'est pas fait pour être heureux. Il est fait pour se révolter." - Shogo Makishima (Psycho-Pass)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Lelouch+vi+Britannia
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Shogo Makishima -->
+        <div class="character" data-design='{"name": "Shogo Makishima", "image": "shogo.jpg"}'>
+            <img src="shogo.jpg" alt="Shogo Makishima">
+            <h3>Shogo Makishima</h3>
+            <p class="quote">"L'homme n'est pas fait pour être heureux. Il est fait pour se révolter."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        
-
-        <div class="character">
+        <!-- Sosuke Aizen (2ème version) -->
+        <div class="character" data-design='{"name": "Sosuke Aizen", "image": "sosuke.jpg"}'>
             <img src="sosuke.jpg" alt="Sosuke Aizen">
-            <p class="quote"> "Les êtres humains sont des créatures qui ont soif de pouvoir. Et une fois qu’ils y ont goûté, ils ne peuvent plus s’arrêter." - Sosuke Aizen (Bleach)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Sosuke+Aizen 
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Sosuke Aizen</h3>
+            <p class="quote">"Les êtres humains sont des créatures qui ont soif de pouvoir. Et une fois qu’ils y ont goûté, ils ne peuvent plus s’arrêter."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-            <!-- Sung Jin-Woo -->
-            <div class="character">
-                <img src="sungjinwoo.jpg" alt="Sung Jin-Woo">
-                <p class="quote">"Si je ne peux pas faire confiance à ma propre force, alors autant abandonner maintenant." - Sung Jin-Woo</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSungJinWoo/viewform?usp=pp_url&entry.634552224=Sung+Jin-Woo" target="_blank">
-                    <button class="btn">Choisir ce design</button>
-                </a>
-            </div>
-    
-
-            <!-- Minato Namikaze -->
-            <div class="character">
-                <img src="minato.jpg" alt="Minato Namikaze">
-                <p class="quote">"Ceux qui enfreignent les règles sont des déchets, mais ceux qui abandonnent leurs amis sont pires que des déchets." - Minato Namikaze</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMinatoNamikaze/viewform?usp=pp_url&entry.634552224=Minato+Namikaze" target="_blank">
-                    <button class="btn">Choisir ce design</button>
-                </a>
-            </div>
-    
-
-        <div class="character">
-            <img src="kiraa.jpg" alt="Kira Yoshikage ">
-            <p class="quote"> "Je ne cherche rien d'autre que de vivre une vie paisible et tranquille."- Kira Yoshikage (JoJo's Bizarre Adventure)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Kira+Yoshikage
-            
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Sung Jin-Woo -->
+        <div class="character" data-design='{"name": "Sung Jin-Woo", "image": "sungjinwoo.jpg"}'>
+            <img src="sungjinwoo.jpg" alt="Sung Jin-Woo">
+            <h3>Sung Jin-Woo</h3>
+            <p class="quote">"Si je ne peux pas faire confiance à ma propre force, alors autant abandonner maintenant."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
+        <!-- Minato Namikaze -->
+        <div class="character" data-design='{"name": "Minato Namikaze", "image": "minato.jpg"}'>
+            <img src="minato.jpg" alt="Minato Namikaze">
+            <h3>Minato Namikaze</h3>
+            <p class="quote">"Ceux qui enfreignent les règles sont des déchets, mais ceux qui abandonnent leurs amis sont pires que des déchets."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+        <!-- Kira Yoshikage -->
+        <div class="character" data-design='{"name": "Kira Yoshikage", "image": "kiraa.jpg"}'>
+            <img src="kiraa.jpg" alt="Kira Yoshikage">
+            <h3>Kira Yoshikage</h3>
+            <p class="quote">"Je ne cherche rien d'autre que de vivre une vie paisible et tranquille."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
         <!-- Nico Robin -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Nico Robin", "image": "nico_robin.jpg"}'>
             <img src="nico_robin.jpg" alt="Nico Robin">
-            <p class="quote">"Je suis une archéologue, je veux découvrir ce que le monde a caché." - Nico Robin (One Piece)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Nico+Robin" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Nico Robin</h3>
+            <p class="quote">"Je suis une archéologue, je veux découvrir ce que le monde a caché."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
+        <!-- Shikamaru Nara (2ème version) -->
+        <div class="character" data-design='{"name": "Shikamaru Nara", "image": "shikamaru.jpg"}'>
             <img src="shikamaru.jpg" alt="Shikamaru Nara">
-            <p class="quote">"La chose la plus importante dans la vie, ce n’est pas de gagner ou de perdre. C’est d’avoir les bonnes personnes à vos côtés." - Shikamaru Nara (Naruto)</p>
-            <a href="
-            https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Shikamaru+Nara
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Shikamaru Nara</h3>
+            <p class="quote">"La chose la plus importante dans la vie, ce n’est pas de gagner ou de perdre. C’est d’avoir les bonnes personnes à vos côtés."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
+        <!-- Akashi Seijuro -->
+        <div class="character" data-design='{"name": "Akashi Seijuro", "image": "Akashi.jpg"}'>
             <img src="Akashi.jpg" alt="Akashi Seijuro">
-            <p class="quote">"Seul celui qui est capable de contrôler la situation en toutes circonstances est un véritable génie."- Akashi Seijuro (Kuroko no Basket)</p>
-            <a href="
-            https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Akashi+Seijuro
-            
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Akashi Seijuro</h3>
+            <p class="quote">"Seul celui qui est capable de contrôler la situation en toutes circonstances est un véritable génie."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
-            <img src="Madara.jpg" alt="Madara UchiWa">
-            <p class="quote">"Il n'y a pas de paix sans guerre." - Madara UchiWa (Naruto)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Madara+Uchiwa
-             " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Madara Uchiwa -->
+        <div class="character" data-design='{"name": "Madara Uchiwa", "image": "Madara.jpg"}'>
+            <img src="Madara.jpg" alt="Madara Uchiwa">
+            <h3>Madara Uchiwa</h3>
+            <p class="quote">"Il n'y a pas de paix sans guerre."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <div class="character">
-            <img src="tatsuya.jpg" alt=" Tatsuya Shiba">
-            <p class="quote">"Je ne me bats pas pour la gloire, mais pour protéger ceux qui me sont chers." -  Tatsuya Shiba (The Irregular at Magic High School)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Tatsuya+Shiba
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Tatsuya Shiba -->
+        <div class="character" data-design='{"name": "Tatsuya Shiba", "image": "tatsuya.jpg"}'>
+            <img src="tatsuya.jpg" alt="Tatsuya Shiba">
+            <h3>Tatsuya Shiba</h3>
+            <p class="quote">"Je ne me bats pas pour la gloire, mais pour protéger ceux qui me sont chers."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-      
-
-          <!-- Ayanokōji Kyotaka -->
-          <div class="character">
+        <!-- Ayanokōji Kyotaka -->
+        <div class="character" data-design='{"name": "Ayanokōji Kyotaka", "image": "kyotaka.jpg"}'>
             <img src="kyotaka.jpg" alt="Ayanokōji Kyotaka">
-            <p class="quote">"La compétition est injuste. Ceux qui naissent talentueux gagnent facilement." - Ayanokōji Kyotaka</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKyotaka/viewform?usp=pp_url&entry.634552224=Ayanokōji+Kyotaka" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Ayanokōji Kyotaka</h3>
+            <p class="quote">"La compétition est injuste. Ceux qui naissent talentueux gagnent facilement."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- Horikita Suzune -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Horikita Suzune", "image": "suzune.jpg"}'>
             <img src="suzune.jpg" alt="Horikita Suzune">
-            <p class="quote">"Si tu ne fais rien, rien ne changera jamais." - Horikita Suzune</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSuzune/viewform?usp=pp_url&entry.634552224=Horikita+Suzune" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Horikita Suzune</h3>
+            <p class="quote">"Si tu ne fais rien, rien ne changera jamais."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- Arisu Sakayanagi -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Arisu Sakayanagi", "image": "Arrisu.jpg"}'>
             <img src="Arrisu.jpg" alt="Arisu Sakayanagi">
-            <p class="quote">"Le pouvoir ne réside pas seulement dans la force brute, mais dans l’intelligence et la manipulation." - Arisu Sakayanagi</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdArisu/viewform?usp=pp_url&entry.634552224=Arisu+Sakayanagi" target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Arisu Sakayanagi</h3>
+            <p class="quote">"Le pouvoir ne réside pas seulement dans la force brute, mais dans l’intelligence et la manipulation."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-            <!-- Sung Jin-Woo -->
-            <div class="character">
-                <img src="sung-jinwoo.jpg" alt="Sung Jin-Woo">
-                <p class="quote">"Je n’ai pas besoin de sauver le monde. Je veux juste devenir plus fort." - Sung Jin-Woo</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJinwoo/viewform?usp=pp_url&entry.634552224=Sung+Jin-Woo" target="_blank">
-                    <button class="btn">Choisir ce design</button>
-                </a>
-            </div>
-    
-
-
-        <div class="character">
-            <img src="philip.jpg" alt="Philip Emeagwali ">
-            <p class="quote"> "Les gens peuvent souvent se sentir ignorants dans le domaine des technologies, mais ce sont ces mêmes technologies qui leur permettent de réussir." - Senku Ishigami (Dr. Stone)</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Philip+Emeagwali
-            
-            " target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+        <!-- Sung Jin-Woo (2ème version) -->
+        <div class="character" data-design='{"name": "Sung Jin-Woo", "image": "sung-jinwoo.jpg"}'>
+            <img src="sung-jinwoo.jpg" alt="Sung Jin-Woo">
+            <h3>Sung Jin-Woo</h3>
+            <p class="quote">"Je n’ai pas besoin de sauver le monde. Je veux juste devenir plus fort."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
+        <!-- Philip Emeagwali -->
+        <div class="character" data-design='{"name": "Philip Emeagwali", "image": "philip.jpg"}'>
+            <img src="philip.jpg" alt="Philip Emeagwali">
+            <h3>Philip Emeagwali</h3>
+            <p class="quote">"Les gens peuvent souvent se sentir ignorants dans le domaine des technologies, mais ce sont ces mêmes technologies qui leur permettent de réussir."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+    </main><br>
 
-       
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <h2>Vous ne trouvez pas le génie qui vous inspire ?</h2><br>
+        <p>Envoyez-nous votre idée ou image pour un design personnalisé unique !</p><br><br>
+        <a href="https://wa.me/+22891412003?text=Bonjour, nous voudrions proposer notre propre design de génie." class="btn contact-btn">Contactez-nous</a>
+    </section><br>
 
-    </div>
+    <!-- Bouton Retour -->
+    <a href="index.html" class="back-btn">⬅ Retour à l’accueil</a>
 
-    <a href="index.html" class="back-btn">⬅ Retour à l'accueil</a>
+    <footer class="footer">
+        <p>© 2025 AKAG - Designs Personnalisés</p>
+    </footer>
 
-    <div class="footer">
-        <p>Créé avec passion par AKAG</p>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

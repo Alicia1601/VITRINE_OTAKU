@@ -1,225 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savants Fous des Films - Complète</title>
+    <title>AKAG - Savants Fous des Films</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="welcome-container">
+            <h1>Savants Fous des Films</h1><br>
+            <p class="intro-text">Des génies excentriques entre grandeur et destruction.</p>
+            <p class="intro-text">Affichez leur aura sur un t-shirt, tableau ou accessoire audacieux !</p>
+            <p class="choix">Cliquez sur "Choisir ce design" pour nous contacter via WhatsApp.</p>
+        </div>
+    </header>
 
-    <h1>Savants Fous des Films </h1><br>
-    <div class="super">
-        <h2> "Entre Génie et folie : une frontière fragile"</h2>
-        <h2>"Certains esprits brillants ne se contentent pas d’explorer les mystères du monde… ils veulent le redéfinir
-            à leur image. Ces savants fous, fascinants et inquiétants, oscillent entre grandeur et destruction. <br>
-            Leur intelligence n’a d’égal que leur ambition démesurée, et leur folie a souvent bouleversé l’ordre établi.
-            <br> Entrez dans l’univers des scientifiques les plus dérangeants du cinéma."</h2><br>
-        <h2>Si l’extravagance et le génie vous inspirent, affichez leur aura sur un accessoire unique et audacieux !
-        </h2>
-    </div>
-    <span class="choix">Cliquez sur "Choisir ce design" et remplissez le formulaire pour commander votre t-shirt, carnet
-        ou autre article personnalisé !</span>
-
-
-
-    <div class="gallery">
-
-
-
+    <main class="gallery">
         <!-- Anton Chigurh -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Anton Chigurh", "image": "anton.jpg"}'>
             <img src="anton.jpg" alt="Anton Chigurh">
-            <p class="quote">"Le destin est une question de chance... ou de choix." - Anton Chigurh</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Anton+Chigurh"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Anton Chigurh</h3>
+            <p class="quote">"Le destin est une question de chance... ou de choix."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Walter Bishop (Fringe) -->
-<div class="character">
-    <img src="walter.jpg" alt="Walter Bishop">
-    <p class="quote">"La science n'est jamais simple. Et c'est ce qui la rend fascinante." - Walter Bishop</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Walter+Bishop" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Jarod (The Pretender) -->
-<div class="character">
-    <img src="jarod.jpg" alt="Jarod">
-    <p class="quote">"Tout est possible quand on a les bonnes informations." - Jarod</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Jarod" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-<!-- Joker (Batman) -->
-<div class="character">
-    <img src="joker.jpg" alt="Joker">
-    <p class="quote">"Pourquoi si sérieux ?" - Joker</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Joker" target="_blank">
-        <button class="btn">Choisir ce design</button>
-    </a>
-</div>
-
-        <!-- Dr. Emmett Brown (Retour vers le futur) -->
-        <div class="character">
+        <!-- Walter Bishop -->
+        <div class="character" data-design='{"name": "Walter Bishop", "image": "walter.jpg"}'>
+            <img src="walter.jpg" alt="Walter Bishop">
+            <h3>Walter Bishop</h3>
+            <p class="quote">"La science n'est jamais simple. Et c'est ce qui la rend fascinante."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+        <!-- Jarod -->
+        <div class="character" data-design='{"name": "Jarod", "image": "jarod.jpg"}'>
+            <img src="jarod.jpg" alt="Jarod">
+            <h3>Jarod</h3>
+            <p class="quote">"Tout est possible quand on a les bonnes informations."</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+        <!-- Joker -->
+        <div class="character" data-design='{"name": "Joker", "image": "joker.jpg"}'>
+            <img src="joker.jpg" alt="Joker">
+            <h3>Joker</h3>
+            <p class="quote">"Pourquoi si sérieux ?"</p>
+            <button class="btn choose-design">Choisir ce design</button>
+        </div>
+        <!-- Dr. Emmett Brown -->
+        <div class="character" data-design='{"name": "Dr. Emmett Brown", "image": "docbrown.jpg"}'>
             <img src="docbrown.jpg" alt="Dr. Emmett Brown">
-            <p class="quote">"Le futur n'est jamais écrit, il n'existe que celui que nous nous créons nous-mêmes." - Dr.
-                Emmett Brown</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Emmett+Brown"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dr. Emmett Brown</h3>
+            <p class="quote">"Le futur n'est jamais écrit, il n'existe que celui que nous nous créons nous-mêmes."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Tony Stark (Iron Man) -->
-        <div class="character">
+        <!-- Tony Stark -->
+        <div class="character" data-design='{"name": "Tony Stark", "image": "tonystark.jpg"}'>
             <img src="tonystark.jpg" alt="Tony Stark">
-            <p class="quote">"Génie, milliardaire, playboy, philanthrope." - Tony Stark</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Tony+Stark"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Tony Stark</h3>
+            <p class="quote">"Génie, milliardaire, playboy, philanthrope."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-
-        <!-- Shuri (Black Panther) -->
-        <div class="character">
+        <!-- Shuri -->
+        <div class="character" data-design='{"name": "Shuri", "image": "shuri.jpg"}'>
             <img src="shuri.jpg" alt="Shuri">
-            <p class="quote">"Juste parce que quelque chose fonctionne ne signifie pas que cela ne peut pas être
-                amélioré." - Shuri</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Shuri"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Shuri</h3>
+            <p class="quote">"Juste parce que quelque chose fonctionne ne signifie pas que cela ne peut pas être amélioré."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Dr. Ellie Sattler (Jurassic Park) -->
-        <div class="character">
+        <!-- Dr. Ellie Sattler -->
+        <div class="character" data-design='{"name": "Dr. Ellie Sattler", "image": "elliesattler.jpg"}'>
             <img src="elliesattler.jpg" alt="Dr. Ellie Sattler">
-            <p class="quote">"Le futur appartient à ceux qui savent s’adapter." - Dr. Ellie Sattler</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Ellie+Sattler"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dr. Ellie Sattler</h3>
+            <p class="quote">"Le futur appartient à ceux qui savent s’adapter."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-       
-
-        <!-- Harley Quinn (DC Comics) -->
-        <div class="character">
+        <!-- Harley Quinn -->
+        <div class="character" data-design='{"name": "Harley Quinn", "image": "harleyquinn.jpg"}'>
             <img src="harleyquinn.jpg" alt="Harley Quinn">
-            <p class="quote">"Les meilleurs fous sont ceux qui cachent leur folie." - Harley Quinn</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Harley+Quinn"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Harley Quinn</h3>
+            <p class="quote">"Les meilleurs fous sont ceux qui cachent leur folie."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Agatha Harkness (WandaVision) -->
-        <div class="character">
+        <!-- Agatha Harkness -->
+        <div class="character" data-design='{"name": "Agatha Harkness", "image": "agatha.jpg"}'>
             <img src="agatha.jpg" alt="Agatha Harkness">
-            <p class="quote">"Les petits détails sont toujours les plus importants." - Agatha Harkness</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Agatha+Harkness"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Agatha Harkness</h3>
+            <p class="quote">"Les petits détails sont toujours les plus importants."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Dr. Jean Grey (X-Men) -->
-        <div class="character">
+        <!-- Dr. Jean Grey -->
+        <div class="character" data-design='{"name": "Dr. Jean Grey", "image": "jeangrey.jpg"}'>
             <img src="jeangrey.jpg" alt="Dr. Jean Grey">
-            <p class="quote">"Le vrai pouvoir n’a pas besoin d’être démontré." - Dr. Jean Grey</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Jean+Grey"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dr. Jean Grey</h3>
+            <p class="quote">"Le vrai pouvoir n’a pas besoin d’être démontré."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Dana Scully (X-Files) -->
-        <div class="character">
+        <!-- Dana Scully -->
+        <div class="character" data-design='{"name": "Dana Scully", "image": "scully.jpg"}'>
             <img src="scully.jpg" alt="Dana Scully">
-            <p class="quote">"La vérité est ailleurs, mais la science nous éclaire." - Dana Scully</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dana+Scully"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dana Scully</h3>
+            <p class="quote">"La vérité est ailleurs, mais la science nous éclaire."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Dr. Temperance Brennan (Bones) -->
-        <div class="character">
+        <!-- Dr. Temperance Brennan -->
+        <div class="character" data-design='{"name": "Dr. Temperance Brennan", "image": "brennan.jpg"}'>
             <img src="brennan.jpg" alt="Dr. Temperance Brennan">
-            <p class="quote">"La vérité est inscrite dans les os, il suffit de savoir la lire." - Dr. Temperance Brennan
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Temperance+Brennan"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dr. Temperance Brennan</h3>
+            <p class="quote">"La vérité est inscrite dans les os, il suffit de savoir la lire."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Victor Frankenstein (Frankenstein) -->
-        <div class="character">
+        <!-- Victor Frankenstein -->
+        <div class="character" data-design='{"name": "Victor Frankenstein", "image": "frankenstein.jpg"}'>
             <img src="frankenstein.jpg" alt="Victor Frankenstein">
-            <p class="quote">"La vie et la mort m'apparaissaient comme des frontières idéales à dépasser." - Victor
-                Frankenstein</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Victor+Frankenstein"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Victor Frankenstein</h3>
+            <p class="quote">"La vie et la mort m'apparaissaient comme des frontières idéales à dépasser."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Dr. Octopus (Spider-Man) -->
-        <div class="character">
+        <!-- Dr. Octopus -->
+        <div class="character" data-design='{"name": "Dr. Octopus", "image": "droctopus.jpg"}'>
             <img src="droctopus.jpg" alt="Dr. Octopus">
-            <p class="quote">"L’intelligence n’est pas un privilège, c’est un don. Et il doit être utilisé pour le bien
-                de l’humanité." - Dr. Octopus</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Dr.+Octopus"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Dr. Octopus</h3>
+            <p class="quote">"L’intelligence n’est pas un privilège, c’est un don. Et il doit être utilisé pour le bien de l’humanité."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-        <!-- Bruce Banner (Hulk) -->
-        <div class="character">
+        <!-- Bruce Banner -->
+        <div class="character" data-design='{"name": "Bruce Banner", "image": "brucebanner.jpg"}'>
             <img src="brucebanner.jpg" alt="Bruce Banner">
-            <p class="quote">"Ce secret ? Je suis toujours en colère." - Bruce Banner</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Bruce+Banner"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Bruce Banner</h3>
+            <p class="quote">"Ce secret ? Je suis toujours en colère."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
-       
-
-        <!-- Hugo Strange (Batman) -->
-        <div class="character">
+        <!-- Hugo Strange -->
+        <div class="character" data-design='{"name": "Hugo Strange", "image": "hugostrange.jpg"}'>
             <img src="hugostrange.jpg" alt="Hugo Strange">
-            <p class="quote">"La science peut être une arme plus puissante que n'importe quel poing." - Hugo Strange</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Hugo+Strange"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Hugo Strange</h3>
+            <p class="quote">"La science peut être une arme plus puissante que n'importe quel poing."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-
         <!-- Willy Wonka -->
-        <div class="character">
+        <div class="character" data-design='{"name": "Willy Wonka", "image": "wonka.jpg"}'>
             <img src="wonka.jpg" alt="Willy Wonka">
-            <p class="quote">"La vie est une friandise que l'on doit déguster avec de la magie." - Willy Wonka</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScblJ-0t8cBinzLPq2JLx0MPNlxo8b5Qx3_0d4KQP7ioIORFQ/viewform?usp=pp_url&entry.634552224=Willy+Wonka"
-                target="_blank">
-                <button class="btn">Choisir ce design</button>
-            </a>
+            <h3>Willy Wonka</h3>
+            <p class="quote">"La vie est une friandise que l'on doit déguster avec de la magie."</p>
+            <button class="btn choose-design">Choisir ce design</button>
         </div>
-    </div>
-    <a href="index.html" class="back-btn">⬅ Retour à l'accueil</a>
-    <div class="footer">
-        <p>Créé avec passion par AKAG</p>
-    </div>
-</body>
+    </main>
 
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <h2>Vous ne trouvez pas le savant fou parfait ?</h2><br>
+        <p>Envoyez-nous votre propre idée ou image pour une création personnalisée !</p><br>
+        <a href="https://wa.me/+22891412003?text=Bonjour, je voudrais proposer mon propre design de savant fou." class="btn contact-btn">Contactez-nous</a>
+    </section><br>
+
+    <!-- Bouton Retour -->
+    <a href="index.html" class="back-btn">⬅ Retour à l’accueil</a>
+
+    <footer class="footer">
+        <p>© 2025 AKAG - Designs Personnalisés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
